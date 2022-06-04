@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+// global
+@import "themes/global/variables";
+@import "themes/global/flex";
+
+// components
+@import "themes/components/sidenav-sx";
+@import "themes/components/navbar";
+@import "themes/components/appointments";
+@import "themes/components/contacts";
+@import "themes/components/form";
+
+// fonts
+@font-face {
+  font-face-name: Avenir;
+  src: url('assets/fonts/AvenirNextLTPro-Regular.otf');
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: $accent;}
+
+//* {
+//  font-family: Avenir /* Replace with your custom font */, sans-serif !important;
+//  /* Add !important to overwrite all elements */
+//}

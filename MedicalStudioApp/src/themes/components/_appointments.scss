@@ -1,0 +1,80 @@
+app-appointments {
+  .divvone {
+    height: 90vh;
+    width: 74vw;
+    background-color: $main-bg;
+    border-bottom-left-radius: 30px;
+
+    .margin {
+      margin-left: 3vw;
+      margin-right: 2vw;
+      padding-top: 2vh;
+    }
+
+    h2 {
+      margin: 0;
+    }
+
+    button {
+      margin: 1vh;
+    }
+
+    .table-responsive {
+      display: block;
+      width: 90%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+      width: 100%;
+
+      img {
+        height: 5vh;
+        width: 5vh;
+        border-radius: 100%;
+        object-fit: cover;
+        margin: 1.5vh;
+      }
+
+      .round {
+        border-radius: 100%;
+        background-color: $circle;
+        width: 2vw;
+        height: 2vw;
+      }
+
+      .accent {
+        color: $accent;
+      }
+
+      .rectangle {
+        border-radius: 50px;
+        height: 5vh;
+        width: .5vh;
+        margin-right: 5px;
+      }
+    }
+
+    .rectangle2 {
+      height: 20px;
+      width: 7px;
+      border-radius: 50px;
+    }
+
+    .end {
+      position: absolute;
+      bottom: 0;
+
+    }
+
+    .padding {
+      padding: 15px;
+      padding-left: 20px;
+    }
+
+    .ml {
+      margin-left: 5px;
+    }
+  }
+}

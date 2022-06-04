@@ -1,0 +1,18 @@
+app-form {
+  .divvone {
+    height: 90vh;
+    width: 74vw;
+    background-color: $main-bg;
+    border-bottom-left-radius: 30px;
+    .w-50 {
+      width: 50%
+    }
+
+    .mini {
+      width: 93px
+    }
+    .large{
+      width: 375px
+    }
+  }
+}

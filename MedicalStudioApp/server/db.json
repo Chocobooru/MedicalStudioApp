@@ -1,0 +1,358 @@
+{
+  "VisitType": [
+    {
+      "id": 1,
+      "name": "POSTURAL"
+    },
+    {
+      "id": 2,
+      "name": "COLONSCOPY"
+    },
+    {
+      "id": 3,
+      "name": "CHECKUP"
+    },
+    {
+      "id": 4,
+      "name": "HAND SANITIZING"
+    },
+    {
+      "id": 5,
+      "name": "BURNS"
+    },
+    {
+      "id": 6,
+      "name": "COVID-37"
+    },
+    {
+      "id": 7,
+      "name": "OSTEOPATHY"
+    },
+    {
+      "id": 8,
+      "name": "OTHER"
+    }
+  ],
+  "Place": [
+    {
+      "id": 1,
+      "name": "OFFICE"
+    },
+    {
+      "id": 2,
+      "name": "HOME VISIT"
+    },
+    {
+      "id": 3,
+      "name": "REMOTE"
+    }
+  ],
+  "Office": [
+    {
+      "id": 1,
+      "name": "Cerulean Office",
+      "color": "#32b1e7"
+    },
+    {
+      "id": 2,
+      "name": "Yellow Office",
+      "color": "#fed767"
+    },
+    {
+      "id": 3,
+      "name": "Teal Office",
+      "color": "#0ad4c4"
+    },
+    {
+      "id": 4,
+      "name": "Magenta Office",
+      "color": "#e0337b"
+    },
+    {
+      "id": 5,
+      "name": "Orange Office",
+      "color": "#ef8633"
+    }
+  ],
+  "Patient": [
+    {
+      "id": 1,
+      "name": "Dio",
+      "surname": "Brando",
+      "age": "30",
+      "fiscalCode": "DIOBRN56",
+      "phone": "123456789",
+      "email": "jd@mail.com",
+      "gender": "M",
+      "address": "via ciccio",
+      "imgPath": "../../../../../assets/img/dio.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Jean Pierre",
+      "surname": "Polnareff",
+      "age": "30",
+      "fiscalCode": "JNPPLN67",
+      "phone": "123456789",
+      "email": "jd@mail.com",
+      "gender": "M",
+      "address": "via ciccio",
+      "imgPath": "../../../../../assets/img/polnareff.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Za",
+      "surname": "Hando",
+      "age": "30",
+      "fiscalCode": "ZAHNDO89",
+      "phone": "123456789",
+      "email": "jd@mail.com",
+      "gender": "M",
+      "address": "via ciccio",
+      "imgPath": "../../../../../assets/img/zahando.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Joseph",
+      "surname": "Joestar",
+      "age": "30",
+      "fiscalCode": "JOSJOE46",
+      "phone": "123456789",
+      "email": "jd@mail.com",
+      "gender": "M",
+      "address": "via ciccio",
+      "imgPath": "../../../../../assets/img/joseph.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Bruno",
+      "surname": "Bucciarati",
+      "age": "30",
+      "fiscalCode": "BRNBCR56",
+      "phone": "123456789",
+      "email": "jd@mail.com",
+      "gender": "M",
+      "address": "via ciccio",
+      "imgPath": "../../../../../assets/img/bruno.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Leone",
+      "surname": "Abbacchio",
+      "age": "30",
+      "fiscalCode": "LNEABB83",
+      "phone": "123456789",
+      "email": "jd@mail.com",
+      "gender": "M",
+      "address": "via ciccio",
+      "imgPath": "../../../../../assets/img/leone.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Guido",
+      "surname": "Mista",
+      "age": 24,
+      "gender": "M",
+      "fiscalCode": "GDOMST57",
+      "phone": "3466344565",
+      "address": "via cane",
+      "email": "guido@mista.com",
+      "imgPath": "../../../../../assets/img/guido.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Killer",
+      "surname": "Queen",
+      "age": 918,
+      "gender": "NB",
+      "fiscalCode": "KLRQEN85",
+      "phone": "5674",
+      "address": "via sheer heart attacco",
+      "email": "kira.queen@mail.com",
+      "imgPath": "../../../../../assets/img/killer.jpg"
+    }
+  ],
+  "Appointment": [
+    {
+      "id": 1,
+      "number": "DYO667",
+      "date": "2022-06-06",
+      "startHour": "16:30",
+      "endHour": "16:32",
+      "medicalService": {
+        "id": 1,
+        "name": "POSTURAL"
+      },
+      "place": {
+        "id": 2,
+        "name": "HOME VISIT"
+      },
+      "notes": "",
+      "patient": {
+        "id": 1,
+        "name": "Dio",
+        "surname": "Brando",
+        "age": "30",
+        "fiscalCode": "JHNDOE30",
+        "phone": "123456789",
+        "email": "jd@mail.com",
+        "gender": "M",
+        "address": "via ciccio",
+        "imgPath": "../../../../../assets/img/dio.jpg"
+      },
+      "office": {}
+    },
+    {
+      "id": 2,
+      "number": "LEL289",
+      "date": "2022-06-07",
+      "startHour": "16:30",
+      "endHour": "16:32",
+      "medicalService": {
+        "id": 2,
+        "name": "COLONSCOPY"
+      },
+      "place": {
+        "id": 3,
+        "name": "REMOTE"
+      },
+      "notes": "",
+      "patient": {
+        "id": 2,
+        "name": "Jean Pierre",
+        "surname": "Polnareff",
+        "age": "30",
+        "fiscalCode": "JHNDOE30",
+        "phone": "123456789",
+        "email": "jd@mail.com",
+        "gender": "M",
+        "address": "via ciccio",
+        "imgPath": "../../../../../assets/img/polnareff.jpg"
+      },
+      "office": {}
+    },
+    {
+      "id": 3,
+      "number": "JRT754",
+      "date": "2022-06-013",
+      "startHour": "16:30",
+      "endHour": "16:32",
+      "medicalService": {
+        "id": 4,
+        "name": "HAND SANITIZING"
+      },
+      "place": {
+        "id": 1,
+        "name": "OFFICE"
+      },
+      "notes": "",
+      "patient": {
+        "id": 3,
+        "name": "Za",
+        "surname": "Hando",
+        "age": "30",
+        "fiscalCode": "JHNDOE30",
+        "phone": "123456789",
+        "email": "jd@mail.com",
+        "gender": "M",
+        "address": "via ciccio",
+        "imgPath": "../../../../../assets/img/zahando.jpg"
+      },
+      "office": {
+        "id": 1,
+        "name": "Cerulean Office",
+        "color": "#32b1e7"
+      }
+    },
+    {
+      "id": 4,
+      "number": "HRO876",
+      "date": "2022-06-17",
+      "startHour": "16:30",
+      "endHour": "16:32",
+      "medicalService": {
+        "id": 3,
+        "name": "CHECKUP"
+      },
+      "place": {
+        "id": 3,
+        "name": "REMOTE"
+      },
+      "notes": "",
+      "patient": {
+        "id": 4,
+        "name": "Joseph",
+        "surname": "Joestar",
+        "age": "30",
+        "fiscalCode": "JHNDOE30",
+        "phone": "123456789",
+        "email": "jd@mail.com",
+        "gender": "M",
+        "address": "via ciccio",
+        "imgPath": "../../../../../assets/img/joseph.jpg"
+      },
+      "office": {}
+    },
+    {
+      "date": "2022-06-22",
+      "startHour": "04:56",
+      "endHour": "05:07",
+      "medicalService": {
+        "id": 3,
+        "name": "CHECKUP"
+      },
+      "place": {
+        "id": 1,
+        "name": "OFFICE"
+      },
+      "notes": "mistaaaaa",
+      "patient": {
+        "id": "",
+        "name": "Guido",
+        "surname": "Mista",
+        "age": 24,
+        "gender": "M",
+        "fiscalCode": "GDOMST57",
+        "phone": "3466344565",
+        "address": "via cane",
+        "email": "guido@mista.com",
+        "imgPath": "../../../../../assets/img/guido.jpg"
+      },
+      "office": {
+        "id": 2,
+        "name": "Yellow Office",
+        "color": "#fed767"
+      },
+      "number": "SCJ553",
+      "id": 5
+    },
+    {
+      "date": "2022-06-23",
+      "startHour": "03:07",
+      "endHour": "09:07",
+      "medicalService": {
+        "id": 3,
+        "name": "CHECKUP"
+      },
+      "place": {
+        "id": 2,
+        "name": "HOME VISIT"
+      },
+      "notes": "",
+      "patient": {
+        "id": 6,
+        "name": "Leone",
+        "surname": "Abbacchio",
+        "age": "30",
+        "gender": "M",
+        "fiscalCode": "LNEABB83",
+        "phone": "123456789",
+        "address": "via ciccio",
+        "email": "jd@mail.com",
+        "imgPath": "../../../../../assets/img/leone.jpg"
+      },
+      "number": "JBP191",
+      "id": 6
+    }
+  ]
+}

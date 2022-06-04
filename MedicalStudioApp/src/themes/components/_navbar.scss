@@ -1,0 +1,44 @@
+app-navbar {
+  .divvone {
+    width: 96vw;
+    height: 10vh;
+    background-color: white;
+    border-top-left-radius: 30px;
+    box-shadow: 0 4px 2px -2px black;
+    img{
+      height:6vh;
+      width:6vh;
+      border-radius: 100%;
+      margin-right: 1vw;
+      object-fit: cover;
+    }
+    .underlined{
+      border-bottom: 3px solid $accent;
+    }
+    .margin-left{
+      margin-left: 1vw;
+    }
+    .margin-right{
+      margin-right: 2vw;
+    }
+    .width{
+      width: 70%
+    }
+    .width2{
+      width: 15%
+    }
+    .round{
+      border-radius: 100%;
+      background-color: $circle;
+      width: 2vw;
+      height: 2vw;
+    }
+    .accent{
+      color: $accent;
+    }
+    span{
+      font-size: .7vw;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+app-sidenav-sx {
+  div {
+    background: $accent;
+    height: 94vh;
+    width: 4vw;
+  }
+
+  .white {
+    color: white;
+  }
+
+  .logo {
+    width: 3vw;
+  }
+
+  .mat {
+    mat-icon {
+      padding: 10px;
+    }
+  }
+
+  .mtb {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+  .router:hover {
+    cursor: pointer;
+  }
+}

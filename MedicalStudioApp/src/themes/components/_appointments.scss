@@ -24,6 +24,8 @@ app-appointments {
       width: 90%;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      overflow-y: scroll;
+      height: 60vh;
     }
 
     table {

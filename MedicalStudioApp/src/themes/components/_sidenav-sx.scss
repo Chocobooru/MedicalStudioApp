@@ -23,7 +23,13 @@ app-sidenav-sx {
     margin-top: 3vh;
     margin-bottom: 3vh;
   }
+  .router{
+    background-color: white;
+    border-radius: 15px;
+    color: $accent;
+  }
   .router:hover {
     cursor: pointer;
   }
+
 }

@@ -15,13 +15,12 @@
     <div class="d-flex direction-column contact scrollable">
       <div *ngFor="let patient of patientDataSorted; let i = index" class="d-flex direction-column" [routerLink]="'/form/edit/'+ patient.id">
         <span id="{{letterArray[i]}}">{{letterArray[i]}}</span>
-        <div class="d-flex vertical-center link">
+        <div class="d-flex vertical-center link" [tabindex]="i">
           <img src="{{patient.imgPath}}" alt="{{patient.id}}">
-
-          {{patient.name}}
-          {{patient.surname}}
-          <br>
-          {{patient.phone}}
+          <div class="d-flex direction-column">
+            <strong>{{patient.name}} {{patient.surname}}</strong>
+            <span class="phone">{{patient.phone}}</span>
+          </div>
         </div>
       </div>
     </div>

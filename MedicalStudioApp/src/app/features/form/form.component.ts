@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {PatientService} from "../../core/services/patient.service";
-import {FormArray, FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {FormArray, FormBuilder, Validators} from "@angular/forms";
 import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
@@ -23,6 +23,7 @@ export class FormComponent implements OnInit {
   medicalServiceData: any;
   placeData: any;
   officeData: any;
+  patientImg: any;
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(obs => {
@@ -90,7 +91,13 @@ export class FormComponent implements OnInit {
 
   postPatient() {
     this.patientData = this.formValuePatient.value;
-    this.patientData.imgPath = '../../../../../assets/img/' + this.patientData.name.toLowerCase() + '.jpg';
+    // fruit.match(/^(banana|lemon|mango|pineapple)$/)
+    if (this.patientData.name.toLowerCase().match(/^(bruno|caesar|dio|giorno|guido|iggy|jean pierre|joseph|killer|leone|za)$/)) {
+      this.patientData.imgPath = '../../../../../assets/img/' + this.patientData.name.toLowerCase() + '.jpg';
+    } else {
+      this.patientData.imgPath = 'https://picsum.photos/id/' + Math.floor(Math.random() * 100 +1) + '/200/200';
+    }
+
     this.patientService.postPatient(this.patientData).subscribe(
       () => {
         alert('Patient ' + this.patientData.name + ' ' + this.patientData.surname + ' successfully added');
@@ -99,7 +106,9 @@ export class FormComponent implements OnInit {
       () => {
       },
       () => {
+
         this.router.navigateByUrl('/appointments');
+        window.location.reload();
       }
     );
   }
@@ -108,6 +117,7 @@ export class FormComponent implements OnInit {
     this.patientService.getPatientById(id).subscribe(observer => {
         this.patientData = {...observer};
         this.formValuePatient.patchValue(observer)
+        this.patientImg = this.patientData.imgPath;
       },
       error => {
         console.error(error)
@@ -119,12 +129,12 @@ export class FormComponent implements OnInit {
   }
 
   postAppointment() {
-    if(!this.patientData){
+    if (!this.patientData) {
       this.postPatient();
     }
     this.appointmentData = this.formValueAppointment.value;
     this.appointmentData.patient = this.formValuePatient.value;
-    this.appointmentData.patient.imgPath = '../../../../../assets/img/' + this.patientData.name.toLowerCase() + '.jpg';
+    this.appointmentData.patient.imgPath = this.patientImg;
     this.appointmentData.place = this.placeData.find((place: { name: any; }) => place.name === this.appointmentData.place);
     this.appointmentData.medicalService = this.medicalServiceData.find((medicalService: { name: any; }) => medicalService.name === this.appointmentData.medicalService);
     if (this.appointmentData.place.name == 'OFFICE') {

@@ -38,13 +38,22 @@ app-contacts {
       border-radius: 15px;
       margin: 1vh;
       margin-right: 2vh;
-      box-shadow: rgba(0, 0, 0, 0.43) 0px 0px 3px;
+      box-shadow: rgba(0, 0, 0, 0.43) 0 0  3px;
     }
 
     .link:hover {
       cursor: pointer;
       background-color: rgba(0, 81, 255, 0.07);
+    }
 
+    .link:focus{
+      cursor: default;
+      background-color: $accent;
+      color: #edf4f6;
+    }
+
+    .phone {
+      color: #5d5d5d;
     }
 
     .letters {
